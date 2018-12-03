@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Tab1Fragment">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/chartQuestion"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barchart"
+                        android:layout_margin="24dp"
+                        android:layout_width="500dp"
+                        android:layout_height="400dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="260dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/legend1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:visibility="invisible">
+
+                            <ImageView
+                                android:id="@+id/answer1Color"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@color/answer1Color"/>
+
+                            <TextView
+                                android:id="@+id/answer1Legend"
+                                android:layout_toRightOf="@id/answer1Color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="Antwort 1"
+                                android:paddingHorizontal="8dp"/>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/legend2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:visibility="invisible">
+
+                            <ImageView
+                                android:id="@+id/answer2Color"
+                                android:layout_below="@id/answer1Color"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@color/answer2Color"/>
+
+                            <TextView
+                                android:id="@+id/answer2Legend"
+                                android:layout_toRightOf="@id/answer2Color"
+                                android:layout_below="@id/answer1Legend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="Antwort 2"
+                                android:paddingHorizontal="8dp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/legend3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:visibility="invisible">
+
+                            <ImageView
+                                android:id="@+id/answer3Color"
+                                android:layout_below="@id/answer2Color"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@color/answer3Color"/>
+
+                            <TextView
+                                android:id="@+id/answer3Legend"
+                                android:layout_toRightOf="@id/answer3Color"
+                                android:layout_below="@id/answer2Legend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="Antwort 3"
+                                android:paddingHorizontal="8dp"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/legend4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:visibility="invisible">
+
+                            <ImageView
+                                android:id="@+id/answer4Color"
+                                android:layout_below="@id/answer3Color"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@color/answer4Color" />
+
+                            <TextView
+                                android:id="@+id/answer4Legend"
+                                android:layout_toRightOf="@id/answer1Color"
+                                android:layout_below="@id/answer3Legend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="Antwort 4"
+                                android:paddingHorizontal="8dp"/>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/legend5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:visibility="invisible">
+
+                            <ImageView
+                                android:id="@+id/answer5Color"
+                                android:layout_below="@id/answer4Color"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@color/answer5Color"/>
+
+                            <TextView
+                                android:id="@+id/answer5Legend"
+                                android:layout_toRightOf="@id/answer5Color"
+                                android:layout_below="@id/answer4Legend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="8dp"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+</ScrollView>
+
+
+</LinearLayout>
